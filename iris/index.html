@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Discover our full range of iris scanners for business. Scan and store your documents efficiently with high performance document or large format scanners." />
+    <meta name="keywords"
+        content="‎Portable scanner, Desktop scanner, ‎Book scanner, IRIScan Executive 4, IRIScan Express 4, IRIScan Book 5" />
+    <meta name="author" content="Qusay And Umair" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iris</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- s = start, e = end -->
+
+    <!-- login form s -->
+    <div class="popup" id="popup">
+        <form class="login-form" id="login-form" onsubmit="return validateLogin();">
+            <a id="close-button" href="index.html">x</a>
+            <h2>
+                log in
+            </h2>
+            <!-- error messages -->
+            <div class="error">
+                <p id="username_err">username should be at least 4 characters</p>
+                <p id="pass_err">password should be at least 6 characters</p>
+            </div>
+
+            <div class="form-element">
+                <input id="username" class="input" type="text" class="enableFocus" placeholder="username"
+                    onfocus=focus();>
+            </div>
+
+            <div class="form-element">
+                <input id="password" class="input" type="password" class="enableFocus" placeholder="password"
+                    onfocus=focus();>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember-me">
+                <label>
+                    remember me
+                </label>
+            </div>
+
+            <div class="form-element">
+                <input type="submit" id="restyle" value="login">
+            </div>
+        </form>
+    </div>
+    <!-- login form e -->
+
+    <!-- announcement s -->
+    <div class="announcement">
+        <div id="announcement-title">
+            <div class="fa-solid fa-rocket rocket"></div>
+            <p>
+                Free shipping on all SA orders over 1000 SAR.
+            </p>
+        </div>
+    </div>
+    <!-- announcement e -->
+
+    <!-- announcement2 s -->
+    <div class="announcement2">
+        <div id="announcement2-title">
+            <!-- bookmark to best sellers -->
+            <a href="products.html#best-sellers">
+                <p>SHOP BEST SELLERS NOW</p>
+            </a>
+        </div>
+    </div>
+    <!-- announcement2 e -->
+
+    <!-- header s -->
+    <div class="header">
+        <!-- navbar s -->
+        <div class="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="./img/iris-logo.svg" alt="iris-logo">
+                </a>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <!-- active = current page -->
+                    <li><a class="active" href="index.html"><span>home</span></a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="purchase.html">purchase</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                    <li class="login-button">
+                        <a class="login-button" href="#popup" onclick="displayLogin();">
+                            <p class="fa-solid fa-user"></p> login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar e -->
+
+        <!-- intro s -->
+        <div class="intro">
+            <div id="intro-title">
+                <img src="./img/title.svg" alt="title">
+            </div>
+        </div>
+        <!-- intro e -->
+    </div>
+    <!-- header e -->
+
+    <!-- about iris s -->
+    <div class="about-iris">
+        <h2>About iris</h2>
+        <p>
+            We’re a leading technology company, founded in <span>1937</span>, and we’re dedicated to helping people
+            reimagine<br />
+            and push the boundaries of what is possible through imaging.<br />
+            <br />
+            Our continuous innovation has kept us at the forefront of imaging excellence throughout our 80-year
+            history<br />
+            which has enabled us to develop industry-leading technology supporting future demands<br />
+            of scanners, office workers, professional printers, medical imaging experts and more.
+        </p>
+    </div>
+    <!-- about iris e -->
+
+    <!-- best sellers products s -->
+    <div class="products-sample" id="best-sellers">
+        <h2>
+            Best Sellers
+        </h2>
+        <!-- product 1 -->
+        <div class="product">
+            <p id="center-product">
+                <img src="./img/product1.webp" alt="product1">
+                <span>
+                    IRIScan Executive 4 duplex scanner
+                </span>
+            </p>
+            <p id="product-info">
+                Intuitive mobile scanning with smart workflows, from a
+                super-fast sheet-feed and duplex portable scanner.
+            </p>
+            <div class="view-details">
+                <a href="products.html#p1">view details</a>
+            </div>
+        </div>
+        <!-- product 2 -->
+        <div class="product">
+            <p id="center-product">
+                <img src="./img/product2.webp" alt="product2">
+                <span>
+                    IRIScan Express 4 scanner
+                </span>
+            </p>
+            <p id="product-info">
+                A portable, USB-powered colour scanner with fast one-
+                click scanning and world-renowned IRIS OCR software for
+                easy document archiving.
+            </p>
+            <div class="view-details">
+                <a href="products.html#p2">view details</a>
+            </div>
+        </div>
+        <!-- product 3 -->
+        <div class="product">
+            <p id="center-product">
+                <img src="./img/product3.webp" alt="product3">
+                <span>
+                    IRIScan Book 5 Wifi
+                </span>
+            </p>
+            <p id="product-info">
+                Make flexible working easier with this super-fast handheld
+                scanner with Wifi connectivity, converting printed pages
+                into editable files, ready to save or share.
+            </p>
+            <div class="view-details">
+                <a href="products.html#p3">view details</a>
+            </div>
+        </div>
+    </div>
+    <!-- best sellers products e -->
+
+    <!-- location s -->
+    <div class="location">
+        <div class="location-frame">
+            <h2>
+                Come Visit Us
+            </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4953.442952388513!2d139.6799577701658!3d35.
+            566554494469145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185fe5be075335%3A0x3ea7d7e676c1372e!2sCanon%20Headquarters!
+            5e0!3m2!1sen!2ssa!4v1675443229086!5m2!1sen!2ssa" width="650" height="350"></iframe>
+        </div>
+    </div>
+    <!-- location e -->
+
+    <!-- footer s -->
+    <div class="footer">
+        <div class="iris-information">
+            <h3>
+                iris
+            </h3>
+            <!-- icons used using "font awesome" -->
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/">
+                        <div class="fa-brands fa-instagram"></div>
+                    </a></li>
+                <li><a href="https://www.facebook.com/">
+                        <div class="fa-brands fa-facebook"></div>
+                    </a></li>
+                <li><a href="https://twitter.com/?lang=en">
+                        <div class="fa-brands fa-twitter"></div>
+                    </a></li>
+                <li><a href="https://www.youtube.com/">
+                        <div class="fa-brands fa-youtube"></div>
+                    </a></li>
+            </ul>
+        </div>
+        <!-- credits -->
+        <div class="ending-footer">
+            <p>Built and designed by Qusay And Umair.<br />
+                <br />
+                All rights reserved. &copy;
+            </p>
+        </div>
+    </div>
+    <!-- footer e -->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

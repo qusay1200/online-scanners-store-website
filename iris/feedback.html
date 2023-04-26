@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Discover our full range of iris scanners for business. Scan and store your documents efficiently with high performance document or large format scanners." />
+    <meta name="keywords"
+        content="‎Portable scanner, Desktop scanner, ‎Book scanner, IRIScan Executive 4, IRIScan Express 4, IRIScan Book 5" />
+    <meta name="author" content="Qusay And Umair" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>feedback</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- s = start, e = end -->
+
+    <!-- header s -->
+    <div class="header">
+        <!-- navbar s -->
+        <div class="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="./img/iris-logo.svg" alt="iris-logo">
+                </a>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <!-- active = current page -->
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="purchase.html">purchase</a></li>
+                    <li><a class="active" href="feedback.html"><span>feedback</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar e -->
+    </div>
+    <!-- header e -->
+
+    <!-- feedback s -->
+    <div class="feedback">
+        <div class="feedback-container">
+            <form onsubmit="return validateFeedback();">
+                <fieldset class="contact-information">
+                    <legend>contact information</legend>
+
+                    <!-- error messages -->
+                    <div class="error">
+                        <p id="name_err">first name and last name should be at least 4 characters</p>
+                        <p id="phone_err">phone number should be 12 digits, fromat:9665********</p>
+                        <p id="email_err">please enter a valid email address</p>
+                        <p id="subject_err">the subject field is required</p>
+                        <p id="feedback_type_err">please select a feedback type</p>
+                        <p id="describe_err">please enter a message in the feeback textarea</p>
+                    </div>
+
+                    <div class="first-name">
+                        <h4>First Name:</h4> <span id="name_digit_err1" class="name_digit_err">remove the written digit
+                            in name</span>
+                        <input id="firstname" class="input name-input" type="text" name="firstname"
+                            placeholder="enter your first name..." onkeyup="checkDigits1();">
+                    </div>
+
+                    <div class="last-name">
+                        <h4>Last Name:</h4> <span id="name_digit_err2" class="name_digit_err">remove the written digit
+                            in name</span>
+                        <input id="lastname" class="input name-input" type="text" name="lastname"
+                            placeholder="enter your last name..." onkeyup="checkDigits2();">
+                    </div>
+
+                    <div class="phone">
+                        <h4>Phone Number: (optional)</h4>
+                        <input id="phone" class="input" type="text" name="phone"
+                            placeholder="enter your phone number...">
+                    </div>
+                    <div class="email">
+                        <h4>Email Address:</h4>
+                        <input id="email" class="input" type="email" name="email" placeholder="ex: myname@example.com">
+                    </div>
+                </fieldset>
+
+                <fieldset class="rate">
+                    <legend>rate us (optional)</legend>
+
+                    <div class="visit">
+                        <h4>Is this your first visit to the website?</h4>
+                        <label><input type="radio" name="visit"> Yes</label>
+                        <label><input type="radio" name="visit"> No</label>
+                    </div>
+
+                    <div class="find">
+                        <h4>Were you able to find what you needed?</h4>
+                        <label><input type="radio" name="find"> Yes</label>
+                        <label><input type="radio" name="find"> No</label>
+                    </div>
+
+                    <div class="simplicity">
+                        <h4>How easy is it to find information on the site?</h4>
+                        <label><input type="radio" name="simplicity"> Very Easy</label>
+                        <label><input type="radio" name="simplicity"> Easy</label>
+                        <label><input type="radio" name="simplicity"> Average</label>
+                        <label><input type="radio" name="simplicity"> Difficult</label>
+                        <label><input type="radio" name="simplicity"> Very Difficult</label>
+                    </div>
+
+                    <div class="product-rate">
+                        <h4>How do you rate our prouducts?</h4>
+                        <label><input type="radio" name="rate"> Very Good</label>
+                        <label><input type="radio" name="rate"> Good</label>
+                        <label><input type="radio" name="rate"> Average</label>
+                        <label><input type="radio" name="rate"> Bad</label>
+                        <label><input type="radio" name="rate"> Very Bad</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="feedback-information">
+                    <legend>feedback form</legend>
+
+                    <h4 class="introduction">
+                        We would love to hear your thoughts, suggestions, concerns
+                        or problems with anything so we can improve!
+                    </h4>
+
+                    <div class="subject">
+                        <h4>Subject:</h4>
+                        <input id="subject" class="input" type="text" name="subject"
+                            placeholder="enter the subject of your feedback...">
+                    </div>
+
+                    <div class="feedback-type">
+                        <h4>Feedback Type:</h4>
+                        <Select id="feedbackType" name="topic">
+                            <option disabled selected>please select your feedback type...</option>
+                            <option>Suggestion</option>
+                            <option>Complaint</option>
+                            <option>Idea</option>
+                            <option>Help</option>
+                            <option>Other...</option>
+                        </Select>
+                    </div>
+
+                    <div class="description">
+                        <h4>Describe Your Feedback:</h4>
+                        <textarea id="describe" class="input" name="message" cols="70"
+                            rows="8">enter your message...</textarea>
+                    </div>
+
+                </fieldset>
+
+                <div class="submit">
+                    <p><input type="submit" name="submit" value="send feedback"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- feedback e -->
+
+    <!-- feedback ending cover -->
+    <div class="feedback-cover">
+    </div>
+
+    <!-- footer s -->
+    <div class="footer" id="resize-footer">
+        <div class="iris-information">
+            <h3>
+                iris
+            </h3>
+            <!-- icons used using "font awesome" -->
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/">
+                        <div class="fa-brands fa-instagram"></div>
+                    </a></li>
+                <li><a href="https://www.facebook.com/">
+                        <div class="fa-brands fa-facebook"></div>
+                    </a></li>
+                <li><a href="https://twitter.com/?lang=en">
+                        <div class="fa-brands fa-twitter"></div>
+                    </a></li>
+                <li><a href="https://www.youtube.com/">
+                        <div class="fa-brands fa-youtube"></div>
+                    </a></li>
+            </ul>
+        </div>
+        <!-- credits -->
+        <div class="ending-footer">
+            <p>Built and designed by Qusay And Umair.<br />
+                <br />
+                All rights reserved. &copy;
+            </p>
+        </div>
+    </div>
+    <!-- footer e -->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Discover our full range of iris scanners for business. Scan and store your documents efficiently with high performance document or large format scanners." />
+    <meta name="keywords"
+        content="‎Portable scanner, Desktop scanner, ‎Book scanner, IRIScan Executive 4, IRIScan Express 4, IRIScan Book 5" />
+    <meta name="author" content="Qusay And Umair" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>purchase</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- s = start, e = end -->
+
+    <!-- header s -->
+    <div class="header">
+        <!-- navbar s -->
+        <div class="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="./img/iris-logo.svg" alt="iris-logo">
+                </a>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <!-- active = current page -->
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a class="active" href="purchase.html"><span>purchase</span></a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar e -->
+    </div>
+    <!-- header e -->
+
+    <!-- purchase form s -->
+    <div class="purchase">
+        <div class="purchase-container">
+            <form onsubmit="return validatePurchase();">
+                <fieldset class="contact-information">
+                    <legend>contact information</legend>
+
+                    <!-- error messages -->
+                    <div class="error">
+                        <p id="name_err">first name and last name should be at least 4 characters</p>
+                        <p id="phone_err">phone number should be 12 digits, fromat:9665********</p>
+                        <p id="email_err">please enter a valid email address</p>
+                        <p id="country_err">plaese select your country</p>
+                        <p id="zipcode_err">the zip code should be 5 digits</p>
+                        <p id="street_err">the street field is required</p>
+                        <p id="city_err">the city field is required</p>
+                        <p id="product_err">please choose the product</p>
+                        <p id="payment_err">please choose a payment methode</p>
+                    </div>
+
+                    <div class="first-name">
+                        <h4>First Name:</h4> <span id="name_digit_err1" class="name_digit_err">remove the written digit
+                            in name</span>
+                        <input id="firstname" class="input name-input" type="text" name="firstname"
+                            placeholder="enter your first name..." onkeyup="checkDigits1();">
+                    </div>
+
+                    <div class="last-name">
+                        <h4>Last Name:</h4> <span id="name_digit_err2" class="name_digit_err">remove the written digit
+                            in name</span>
+                        <input id="lastname" class="input name-input" type="text" name="lastname"
+                            placeholder="enter your last name..." onkeyup="checkDigits2();">
+                    </div>
+
+                    <div class="phone">
+                        <h4>Phone Number: (optional)</h4>
+                        <input id="phone" class="input" type="text" name="phone"
+                            placeholder="enter your phone number...">
+                    </div>
+
+                    <div class="email">
+                        <h4>Email Address:</h4>
+                        <input id="email" class="input" type="email" name="email" placeholder="ex: myname@example.com">
+                    </div>
+
+                    <div class="country">
+                        <h4>Country: </h4>
+                        <select id="country" name="country">
+                            <option disabled selected>select your country...</option>
+                            <option>Saudi Arabia</option>
+                            <option>United Arab Emirates</option>
+                            <option>Egypt</option>
+                            <option>Yemen</option>
+                            <option>Oman</option>
+                            <option>Morocco</option>
+                            <option>Algeria</option>
+                            <option>Tunisia</option>
+                            <option>Qatar</option>
+                            <option>Sudan</option>
+                            <option>Palestine</option>
+                            <option>Jordan</option>
+                            <option>Syria</option>
+                            <option>Kuwait</option>
+                            <option>Lebanon</option>
+                            <option>Bahrain</option>
+                            <option>Libya</option>
+                            <option>Iraq</option>
+                        </select>
+                    </div>
+
+                    <div class="city">
+                        <h4>City:</h4>
+                        <input id="city" type="text" class="input" name="city" placeholder="enter your city...">
+                    </div>
+
+                    <div class="street">
+                        <h4>Street:</h4>
+                        <input id="street" type="text" class="input" name="street" placeholder="enter your street...">
+                    </div>
+
+                    <div class="zip-code">
+                        <h4>Zip code:</h4>
+                        <input id="zipcode" type="text" class="input" name="zip" placeholder="enter your zip code...">
+                    </div>
+                </fieldset>
+
+                <fieldset class="purchase-information">
+                    <legend>purchase information</legend>
+                    <div class="products" id="resize1">
+                        <h4>Product:</h4>
+                        <select id="product" name="product">
+                            <option disabled selected>please choose the product...</option>
+                            <option>IRIScan Executive 4 duplex scanner</option>
+                            <option>IRIScan Express 4 scanner</option>
+                            <option>IRIScan Book 5 Wifi</option>
+                            <option>IRIScan Book 3 scanner</option>
+                            <option>IRIScan Book 5</option>
+                            <option>IRIScan Desk 5 Pro document camera</option>
+                            <option>ScanJet Pro N4000 snw1</option>
+                            <option>ScanJet Pro 3600 f1</option>
+                            <option>ScanJet Enterprise Flow N6600 fnw1</option>
+                            <option>ScanJet Pro 2600 f1</option>
+                            <option>ScanJet Enterprise Flow 7000</option>
+                            <option>ScanJet Enterprise Flow N9120 fn2</option>
+                        </select>
+                    </div>
+
+                    <!-- 3d icon -->
+                    <span>
+                        <img src="./img/3d-icon.svg" alt="3d icon">
+                    </span>
+
+                    <div class="quantity" id="resize2">
+                        <h4>Quantity:</h4>
+                        <select name="quantity">
+                            <option disabled selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+
+                    <div class="payment-method">
+                        <h4>Payment method:</h4>
+                        <label>Apple Pay <input type="radio" name="method"></label>
+                        <label>Paypal <input type="radio" name="method"></label>
+                        <label>Master Card <input type="radio" name="method" checked="checked"></label>
+                        <label>Cash <input type="radio" name="method"></label>
+                    </div>
+                </fieldset>
+
+                <div class="submit">
+                    <p><input type="submit" name="submit" value="purchase"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- purchase form e -->
+
+    <!-- footer s -->
+    <div class="footer">
+        <div class="iris-information">
+            <h3>
+                iris
+            </h3>
+            <!-- icons used using "font awesome" -->
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/">
+                        <div class="fa-brands fa-instagram"></div>
+                    </a></li>
+                <li><a href="https://www.facebook.com/">
+                        <div class="fa-brands fa-facebook"></div>
+                    </a></li>
+                <li><a href="https://twitter.com/?lang=en">
+                        <div class="fa-brands fa-twitter"></div>
+                    </a></li>
+                <li><a href="https://www.youtube.com/">
+                        <div class="fa-brands fa-youtube"></div>
+                    </a></li>
+            </ul>
+        </div>
+        <!-- credits -->
+        <div class="ending-footer">
+            <p>Built and designed by Qusay And Umair.<br />
+                <br />
+                All rights reserved. &copy;
+            </p>
+        </div>
+    </div>
+    <!-- footer e -->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

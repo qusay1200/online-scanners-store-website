@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* announcement */
+.announcement {
+    background-color: #AED1E8;
+}
+
+#announcement-title {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-weight: lighter;
+    font-size: small;
+    padding: 13px;
+}
+
+#announcement-title p {
+    display: inline-block;
+}
+
+/* announcement2 */
+.announcement2 {
+    background-color: #1B4570;
+}
+
+#announcement2-title a p {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 12px;
+    letter-spacing: 1.5px;
+}
+
+/* navigation bar */
+.navbar {
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* navbar links */
+.navbar-links ul {
+    text-align: center;
+}
+
+/* to make all links in one line using inline block  */
+.navbar-links ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px 10px 20px;
+}
+
+.navbar-links ul li a {
+    color: #251749;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* selector is used to select elements when you mouse over them.
+we made it change text color when the mouse inside the block */
+.navbar-links ul li a:hover {
+    color:#A61F69;
+}
+
+/* active link
+chnage link design in the current page */
+.active {
+    background-color: #251749;
+    padding: 2px 15px;
+    border-radius: 30px;
+}
+
+.active span {
+    color: white;
+}
+
+/* logo */
+.navbar #logo {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.navbar #logo a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+/* intro */
+.intro {
+    background-color: #495579;
+    background-image: url(../img/blob-scatter-haikei.svg);
+    background-size: cover;
+    height: 400px;
+    padding-top: 10px;
+}
+
+#intro-title {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* about iris */
+.about-iris {
+    width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.about-iris p {
+    font-size: 17px;
+}
+
+.about-iris p span {
+    font-weight: bold;
+}
+
+/* best sellers */
+.products-sample {
+    width: 1100px;
+    margin: 30px auto;
+}
+
+.product {
+    background-color: #F5F5F5;
+    width: 30%;
+    height: 450px;
+    display: inline-block;
+    border-radius: 25px;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+}
+
+.product img {
+    width: 300px;
+}
+
+.product #center-product {
+    text-align: center;
+    height: 250px;
+}
+
+.product span {
+    font-weight: bold;
+}
+
+.product p {
+    line-height: 1.5;
+}
+
+.product #product-info {
+    text-align: center;
+    margin-top: 10px;
+    height: 100px;
+}
+
+.view-details {
+    margin: 15px auto;
+    text-align: center;
+    background-color: #495579;
+    border-radius: 15px;
+    width: 50%;
+    padding: 5px;
+    border: 2px solid #263159;
+}
+
+.view-details a {
+    color: white;
+}
+
+.products-sample h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* location */
+.location-frame {
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.location-frame iframe {
+    border: 3px solid #251749;
+    border-radius: 25px;
+    margin-left: 172px;
+}
+
+.location-frame h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    background: #20262E;
+    color: white;
+    margin-top: 30px;
+    padding: 40px;
+    font-family:'Times New Roman';
+}
+
+.iris-information {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.iris-information h3 {
+    margin-bottom: 10px;
+}
+
+/* selector is used to select elements when you mouse over them.
+we made it change icon color when the mouse inside the block */
+.iris-information ul li a:hover {
+    color: #CD5888;
+}
+
+.socials {
+    list-style: none;
+}
+
+.socials li { 
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.socials a {
+    color: white;
+}
+
+.ending-footer {
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+/* products */
+.products-cover {
+    background-image: url(../img/products-cover.webp);
+    background-size: contain;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.products-title h1 {
+    text-align: center;
+    font-size: 200px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 40px;
+}
+
+.products-title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.price p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.price p span {
+    font-size: xx-small;
+    font-weight: lighter;
+}
+
+/* portable scanners */
+.portable-scanners-title h2 {
+    text-align: center;
+}
+
+.portable-scanners-title h2 {
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* desktop scanners */
+.desktop-scanners-title h2 {
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* best sellers scanners */
+.best-sellers-scanners-title h2 {
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* purchase */
+fieldset {
+    margin-bottom: 25px;
+    border: #20262E 3px solid;
+    border-radius: 25px;
+    color: #20262E;
+}
+
+legend {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.purchase-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.purchase-container .contact-information div {
+    width: 48%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.purchase-container .contact-information div input {
+    padding: 5px;
+    width: 60%;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+select {
+    padding: 5px;
+    width: 63%;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+.purchase-container .purchase-information div {
+    width: 48%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.payment-method h3 {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 60px;
+}
+
+.submit {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.submit p {
+    text-align: center;
+}
+
+.submit p input {
+    margin: 15px auto;
+    text-align: center;
+    background-color: #495579;
+    border-radius: 15px;
+    width: 25%;
+    padding: 5px;
+    border: 2px solid #263159;
+    color: white;
+}
+
+input {
+    border: #20262E solid 3px;
+}
+
+select {
+    border: #20262E solid 3px;
+}
+
+.payment-method h4 {
+    margin-bottom: 10px;
+}
+
+.purchase-information span {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.purchase-information span img {
+    float: right;
+    height: 150px;
+    margin: 0 auto;
+    padding-right: 70px;
+}
+
+/* resize purchase information */
+#resize1 {
+    width: 21%;
+}
+
+#resize1 select {
+    width: 265px;
+}
+
+#resize2 select {
+    width: 60px;
+}
+
+#resize2 option {
+    text-align: center;
+}
+
+/* arrow to get to the top of the page */
+.arrow {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.arrow p {
+    text-align: center;
+}
+
+/* feedback */
+.feedback-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-container .contact-information div {
+    width: 48%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.feedback-container .contact-information div input {
+    padding: 5px;
+    width: 60%;
+    margin-top: 5px;
+    border-radius: 25px;    
+}
+
+.feedback-container .rate div {
+    width: 48%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.feedback-container .rate label {
+    display: block;
+    margin-top: 7px;
+}
+
+.feedback-container .feedback-information .introduction {
+    text-align: center;
+}
+
+.feedback-container .feedback-information div {
+    width: 48%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.feedback-container .feedback-information div input {
+    padding: 5px;
+    width: 60%;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+textarea {
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.feedback-cover {
+    background-image: url(../img/feedback-cover.webp);
+    background-size: contain;
+    height: 400px;
+}
+
+/* resize footer */
+#resize-footer {
+    margin-top: 0px;
+}
+
+/* login form */
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.popup .login-form {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: white;
+    padding: 30px;
+    color: #20262E;
+    border: #E8E2E2 solid 2.5px;
+}
+
+#close-button {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #20262E;
+}
+
+.popup h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.popup .form-element {
+    text-align: center;
+    margin: 10px;
+}
+
+.popup .form-element input {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border: black solid 2px;
+    border-color: #E8E2E2;
+    background-color: #F5F5F5;
+    padding-left: 10px;
+}
+
+.remember-me {
+    margin-left: 50px;
+    font-size: small;
+}
+
+.remember-me label {
+    margin: 0px;
+    padding: 0px;
+}
+
+#remember-me {
+    margin: 0px;
+    padding: 0px;
+}
+
+#restyle {
+    color: white;
+    background: #495579;
+    border-color: #263159;
+    width: 312.5px;
+    padding-left: 0px;
+}
+
+.login-button {
+    background: none;
+    border: none;
+    color: #251749;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* error */
+.purchase-container .contact-information .error {
+    display: block;
+    width: 95%;
+}
+
+.feedback-container .contact-information .error {
+    display: block;
+    width: 95%;
+}
+
+.error p {
+    display: none;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin: 5px;
+    width: 280px;
+    background-color: rgba(255, 0, 0, 0.055);
+    border-left: red solid 2px;
+    padding-left: 5px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+/* error of digit checking */
+.name_digit_err {
+    display: none;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin: 5px;
+    width: 280px;
+    background-color: rgba(255, 0, 0, 0.055);
+    border-left: red solid 2px;
+    padding-left: 5px;
+    border-radius: 2px;
+    padding: 5px;
+}
